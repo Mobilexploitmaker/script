@@ -1,0 +1,132 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local colors = {
+
+    SchemeColor = Color3.fromRGB(15, 13, 99),
+
+    Background = Color3.fromRGB(11, 10, 48),
+
+    Header = Color3.fromRGB(28, 27, 114),
+
+    TextColor = Color3.fromRGB(255,255,255),
+
+    ElementColor = Color3.fromRGB(0, 0, 0)
+
+}
+
+local Window = Library.CreateLib("Crystal Hub [Game Name]", colors)
+
+local Tab1= Window:NewTab("Prison Life")
+
+local Tab2= Window:NewTab("Da Hood")
+
+local Tab3 = Window:NewTab("Blox Fruits[WIP]")
+
+local Tab4= Window:NewTab("JailBreak[WIP]")
+
+local Section1 = Tab1:NewSection("Prison Life ")
+
+local Section2 = Tab2:NewSection("Da Hood")
+
+local Section3 = Tab3:NewSection("Blox Fruits")
+
+local Section4 = Tab4:NewSection("JailBreak")
+
+--Tab 1
+
+Section1:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+Section1:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+Section1:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+Section1:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+--Tab2
+
+Section2:NewButton("Keyboard (Mobile)", "ButtonInfo", function() loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+
+end)
+
+Section2:NewButton("Selling script", "ButtonInfo", function() loadstring(game:HttpGet('https://raw.githubusercontent.com/Kingy099/Kingys-Gui/main/KingySellingGui.lua'))()   
+
+end)
+
+Section2:NewButton("Encrypt", "ButtonInfo", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/encryptgui.lua"))()   
+
+end)
+
+Section2:NewButton("SwagMode", "ButtonInfo", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()   
+
+end)
+
+--Tab3
+
+Section3:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+Section3:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+Section3:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+Section3:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+--Tab4
+
+Section4:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+Section4:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+Section4:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+Section4:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
