@@ -130,3 +130,10 @@ Section4:NewButton("ButtonText", "ButtonInfo", function()
 
 end)
 
+local Tab5 = Window:NewTab("Extra")
+
+local Section5 = Tab5:NewSection("Extra")
+
+Section:NewLabel("This hub was inspired by Zoro hub")
+
+
