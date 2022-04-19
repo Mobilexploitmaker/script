@@ -134,6 +134,6 @@ local Tab5 = Window:NewTab("Extra")
 
 local Section5 = Tab5:NewSection("Extra")
 
-Section:NewLabel("This hub was inspired by Zoro hub")
+Section5:NewLabel("This hub was inspired by Zoro hub")
 
 
