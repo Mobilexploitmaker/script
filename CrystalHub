@@ -148,7 +148,7 @@ Section5:NewLabel("This hub was inspired by myself too")
 
 
 
-Section1:NewTextBox("Teleport to player[full username]", "TextboxInfo", function(txt)
+Section1:NewTextBox("Teleport to player", "TextboxInfo", function(txt)
 local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
 local p2 = (txt)
 
