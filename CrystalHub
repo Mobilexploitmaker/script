@@ -146,7 +146,7 @@ Section5:NewLabel("This hub is made for Rens|Fishes dhc!")
 
 Section5:NewLabel("This hub was inspired by myself too")
 
-—text boxes 
+
 
 Section1:NewTextBox("Teleport to player[full username]", "TextboxInfo", function(txt)
 local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
