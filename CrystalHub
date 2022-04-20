@@ -17,21 +17,21 @@ local colors = {
 
 local Window = Library.CreateLib("Crystal Hub [multi game support]", colors)
 
-local Tab1= Window:NewTab("Da hood")
+local Tab1= Window:NewTab("Build a Boat")
 
-local Tab2= Window:NewTab("Script Hub")
+local Tab2= Window:NewTab("Da Hood")
 
 local Tab3 = Window:NewTab("Blox Fruits[WIP]")
 
-local Tab4= Window:NewTab("Script hub[extras]")
+local Tab4= Window:NewTab("Prison life")
 
-local Section1 = Tab1:NewSection("Main")
+local Section1 = Tab1:NewSection("build a boat")
 
-local Section2 = Tab2:NewSection("Da Hood Hub")
+local Section2 = Tab2:NewSection("Da Hood ")
 
 local Section3 = Tab3:NewSection("Blox Fruits")
 
-local Section4 = Tab4:NewSection("Build a Boat")
+local Section4 = Tab4:NewSection("Prison lifr")
 
 --Tab 1
 
@@ -157,3 +157,37 @@ p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
 
 wait(5)
 end)
+
+Section4:NewButton("Outside of prison", "Teleports You outside of the prison!", function()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(451.6684265136719, 98.0399169921875, 2216.338134765625)
+		end)
+		Section4:NewButton("Prison Yard", "Teleports You to the Prison Yard", function()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(736.4671630859375, 97.99992370605469, 2517.583740234375)
+		end)
+		Section44:NewButton("Kitchen", "Teleports You to the Kitchen!", function()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(906.641845703125, 99.98993682861328, 2237.67333984375)
+		end)
+		Section4:NewButton("Prison Cells", "Teleports You to the Prison Cells!", function()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(919.5551147460938, 99.98998260498047, 2441.700927734375)
+		end)
+		Section4:NewButton("Surveilance Room", "Teleports You to the Surveilance Room!", function()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(795.251953125, 99.98998260498047, 2327.720703125)
+		end)
+		Section44:NewButton("Break Room", "Teleports You to the Break Room!", function()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(800.0896606445312, 99.98998260498047, 2266.71630859375)
+		end)
+		Section4:NewButton("Police Armory", "Teleports You to the Police Armory!", function()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(837.2889404296875, 99.98998260498047, 2270.99658203125)
+		end)
+		Section4:NewButton("Police Room", "Teleports to to the Police Room", function()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(836.5386352539062, 99.98998260498047, 2320.604248046875)
+		end)
+		Section4:NewButton("Cafeteria", "Teleports you to the Cafeteria!", function()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(918.994873046875, 99.98993682861328, 2325.73095703125)
+		end)
+		Section4:NewButton("Criminal Base Inside", "Teleports you to the Criminal Base Inside!", function()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-975.8451538085938, 109.32379150390625, 2053.11376953125)
+		end)
+
+
+
