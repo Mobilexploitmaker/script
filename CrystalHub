@@ -76,6 +76,11 @@ Section2:NewButton("SwagMode", "ButtonInfo", function()
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()   
 
+
+end)
+
+Section2:NewButton("Faded", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
 end)
 
 --Tab3
