@@ -22,7 +22,7 @@ local Tab2= Window:NewTab("Da Hood")
 
 local Tab3 = Window:NewTab("Blox Fruits[WIP]")
 
-local Tab4= Window:NewTab("JailBreak[WIP]")
+local Tab4= Window:NewTab("Build a Boat[WIP]")
 
 local Section1 = Tab1:NewSection("Prison Life ")
 
@@ -30,7 +30,7 @@ local Section2 = Tab2:NewSection("Da Hood")
 
 local Section3 = Tab3:NewSection("Blox Fruits")
 
-local Section4 = Tab4:NewSection("JailBreak")
+local Section4 = Tab4:NewSection("Build a Boat")
 
 --Tab 1
 
