@@ -1,3 +1,4 @@
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
 local colors = {
@@ -16,13 +17,13 @@ local colors = {
 
 local Window = Library.CreateLib("Crystal Hub [multi game support]", colors)
 
-local Tab1= Window:NewTab("Prison Life")
+local Tab1= Window:NewTab("Da hood")
 
-local Tab2= Window:NewTab("Da Hood")
+local Tab2= Window:NewTab("Script Hub")
 
 local Tab3 = Window:NewTab("Blox Fruits[WIP]")
 
-local Tab4= Window:NewTab("Build a Boat[WIP]")
+local Tab4= Window:NewTab("Script hub[extras]")
 
 local Section1 = Tab1:NewSection("Prison Life ")
 
@@ -141,4 +142,18 @@ local Section5 = Tab5:NewSection("Extra")
 
 Section5:NewLabel("This hub was inspired by Zoro hub")
 
+Section5:NewLabel("This hub is made for Rens|Fishes dhc!")
 
+Section5:NewLabel("This hub was inspired by myself too")
+
+—text boxes 
+
+Section1:NewTextBox("Teleport to player[full username]", "TextboxInfo", function(txt)
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = (txt)
+
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+
+wait(5)
+end)
