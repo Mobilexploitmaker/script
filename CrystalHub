@@ -25,9 +25,9 @@ local Tab3 = Window:NewTab("Blox Fruits[WIP]")
 
 local Tab4= Window:NewTab("Script hub[extras]")
 
-local Section1 = Tab1:NewSection("Prison Life ")
+local Section1 = Tab1:NewSection("Main")
 
-local Section2 = Tab2:NewSection("Da Hood")
+local Section2 = Tab2:NewSection("Da Hood Hub")
 
 local Section3 = Tab3:NewSection("Blox Fruits")
 
