@@ -189,5 +189,8 @@ Section4:NewButton("Outside of prison", "Teleports You outside of the prison!", 
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-975.8451538085938, 109.32379150390625, 2053.11376953125)
 		end)
 
+Section5:NewKeybind("Toggles UI", "KeybindInfo", Enum.KeyCode.G, function()
+	Library:ToggleUI()
+end)
 
 
