@@ -15,9 +15,9 @@ local colors = {
 
 }
 
-local Window = Library.CreateLib("Crystal Hub [multi game support]", colors)
+local Window = Library.CreateLib("Crystal X", colors)
 
-local Tab1= Window:NewTab("Build a Boat")
+local Tab1= Window:NewTab("Non DH games")
 
 local Tab2= Window:NewTab("Da Hood")
 
@@ -25,7 +25,7 @@ local Tab3 = Window:NewTab("Blox Fruits[WIP]")
 
 local Tab4= Window:NewTab("Prison life")
 
-local Section1 = Tab1:NewSection("build a boat")
+local Section1 = Tab1:NewSection("Main Section of gui")
 
 local Section2 = Tab2:NewSection("Da Hood ")
 
