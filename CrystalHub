@@ -53,12 +53,11 @@ Section3:NewButton("ButtonText", "ButtonInfo", function()
 end)
 
 Section4:NewButton("Bank", "ButtonInfo", function()
-    game.Played.LocalPlayer.Character.HumanoidRootPart.CFrame
-    player.Character.HumanoidRootPart.CFrame = CFrame.new(-437.125885, 38.9783134, -285.587372, 0.0165725499, 5.298579e-08, -0.99986279, 1.16139711e-08, 1, 5.31855591e-08, 0.99986279, -1.24937944e-08, 0.0165725499)
+    game.Player.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-437.125885, 38.9783134, -285.587372, 0.0165725499, 5.298579e-08, -0.99986279, 1.16139711e-08, 1, 5.31855591e-08, 0.99986279, -1.24937944e-08, 0.0165725499)
 end)
 
 Section4:NewButton("Admin Base", "ButtonInfo", function()
-    game.Players.Local player.Character.HumanoidRootPart.CFrame = CFrame.new(-796.256897, -39.6492004, -886.306152, -0.39699012, 2.91068263e-05, 0.917822897, 1.63490836e-06, 1, -3.10057476e-05, -0.917822897, -1.08084187e-05, -0.39699012)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-796.256897, -39.6492004, -886.306152, -0.39699012, 2.91068263e-05, 0.917822897, 1.63490836e-06, 1, -3.10057476e-05, -0.917822897, -1.08084187e-05, -0.39699012)
 end)
 
 Section5:NewButton("Swagmode", "ButtonInfo", function()
