@@ -17,7 +17,7 @@ local colors = {
 
 local Window = Library.CreateLib("Crystal X", colors)
 
-local Tab1= Window:NewTab("Non DH games")
+local Tab1= Window:NewTab("Multi supported")
 
 local Tab2= Window:NewTab("Da Hood")
 
@@ -192,5 +192,10 @@ Section4:NewButton("Outside of prison", "Teleports You outside of the prison!", 
 Section5:NewKeybind("Toggles UI", "KeybindInfo", Enum.KeyCode.G, function()
 	Library:ToggleUI()
 end)
+
+Section1:NewSlider("WalkSpeed", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
 
 
