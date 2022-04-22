@@ -1,4 +1,3 @@
-
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
 local colors = {
@@ -17,21 +16,21 @@ local colors = {
 
 local Window = Library.CreateLib("Crystal X", colors)
 
-local Tab1= Window:NewTab("Main")
+local Tab1= Window:NewTab("Genreal")
 
-local Tab2= Window:NewTab("Da Hood")
+local Tab2= Window:NewTab("Script Hub")
 
-local Tab3 = Window:NewTab("Blox Fruits[WIP]")
+local Tab3 = Window:NewTab("Selling")
 
-local Tab4= Window:NewTab("Prison life")
+local Tab4= Window:NewTab("Teleports")
 
-local Section1 = Tab1:NewSection("Main Section of gui")
+local Section1 = Tab1:NewSection("Genreal Section")
 
 local Section2 = Tab2:NewSection("Da Hood ")
 
-local Section3 = Tab3:NewSection("Blox Fruits")
+local Section3 = Tab3:NewSection("Da Hood")
 
-local Section4 = Tab4:NewSection("Prison lifr")
+local Section4 = Tab4:NewSection("Da Hood")
 
 --Tab 1
 
@@ -90,4 +89,49 @@ Section3:NewButton("ButtonText", "ButtonInfo", function()
 
     print("Clicked")
 
+end)
+
+Section3:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+Section3:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+Section3:NewButton("ButtonText", "ButtonInfo", function()
+
+    print("Clicked")
+
+end)
+
+--Tab4
+
+Section4:NewButton("Safe spot", "ButtonInfo", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(207.48085, 38.25, 200014.953, 0.507315397, 0, -0.861760437, 0, 1, 0, 0.861760437, 0, 0.507315397) end)
+
+Section4:NewButton("ButtonText", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-457.610229, 39.0342064, -287.75296, 0.0585283451, 4.92032974e-08, -0.99828577, 5.8701759e-09, 1, 4.96319537e-08, 0.99828577, -8.76498873e-09, 0.0585283451)
+end)
+
+Section4:NewButton("ButtonText", "ButtonInfo", function()
+
+end)
+
+Section4:NewButton("ButtonText", "ButtonInfo", function()
+print(“fortnite”)
+end)
+
+
+Section1:NewTextBox("Teleport to player", "TextboxInfo", function(txt)
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = (txt)
+
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+
+wait(5)
 end)
