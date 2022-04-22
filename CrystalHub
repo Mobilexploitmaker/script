@@ -69,7 +69,7 @@ Section2:NewButton("Selling script", "ButtonInfo", function() loadstring(game:Ht
 
 end)
 
-Section2:NewButton("Encrypt", "ButtonInfo", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/encryptgui.lua"))()   
+Section2:NewButton("Encrypt", "ButtonInfo", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/encryptgui.lua"))()
 
 end)
 
