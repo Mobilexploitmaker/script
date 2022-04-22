@@ -1,139 +1,77 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local colors = {
+_G.UILoadingSongID = ""
+_G.Themes = "Joyboy"
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/0nlyEx/Zoro/main/UI%20Library/ZoroLib.lua"))()
+local Window = Library.CreateLib("Crystal X", _G.Themes) 
 
-    SchemeColor = Color3.fromRGB(15, 13, 99),
+local Section1= Tab1:NewSection("Main")
 
-    Background = Color3.fromRGB(11, 10, 48),
+local Section2= Tab2:NewSection("Player")
 
-    Header = Color3.fromRGB(28, 27, 114),
+local Section3= Tab3:NewSection("Selling")
 
-    TextColor = Color3.fromRGB(255,255,255),
+local Section4= Tab4:NewSection("Teleports")
 
-    ElementColor = Color3.fromRGB(11, 10, 48)
+local Section5= Tab5:NewSection("Fun")
 
-}
+local Section6= Tab6:NewSection("Info")
 
-local Window = Library.CreateLib("Crystal X", colors)
+local Tab1= Window:NewTab("Main")
 
-local Tab1= Window:NewTab("Genreal")
+local Tab2= Window:NewTab("Player")
 
-local Tab2= Window:NewTab("Script Hub")
-
-local Tab3 = Window:NewTab("Selling")
+local Tab3= Window:NewTab("Selling")
 
 local Tab4= Window:NewTab("Teleports")
 
-local Section1 = Tab1:NewSection("Genreal Section")
+local Tab5= Window:NewTab("Fun")
 
-local Section2 = Tab2:NewSection("Da Hood ")
-
-local Section3 = Tab3:NewSection("Da Hood")
-
-local Section4 = Tab4:NewSection("Da Hood")
-
---Tab 1
+local Tab6= Window:NewTab("Info")
 
 Section1:NewButton("ButtonText", "ButtonInfo", function()
-
     print("Clicked")
-
 end)
 
 Section1:NewButton("ButtonText", "ButtonInfo", function()
-
     print("Clicked")
-
 end)
 
-Section1:NewButton("ButtonText", "ButtonInfo", function()
-
+Section2:NewButton("ButtonText", "ButtonInfo", function()
     print("Clicked")
-
 end)
 
-Section1:NewButton("ButtonText", "ButtonInfo", function()
-
+Section2:NewButton("ButtonText", "ButtonInfo", function()
     print("Clicked")
-
 end)
 
---Tab2
-
-Section2:NewButton("Keyboard (Mobile)", "ButtonInfo", function() loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
-
-end)
-
-Section2:NewButton("Selling script", "ButtonInfo", function() loadstring(game:HttpGet('https://raw.githubusercontent.com/Kingy099/Kingys-Gui/main/KingySellingGui.lua'))()   
-
-end)
-
-Section2:NewButton("Encrypt", "ButtonInfo", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/encryptgui.lua"))()
-
-end)
-
-Section2:NewButton("SwagMode", "ButtonInfo", function()
-
-loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()   
-
-
-end)
-
-Section2:NewButton("Faded", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
-end)
-
---Tab3
-
-Section3:NewButton("ButtonText", "ButtonInfo", function()
-
-    print("Clicked")
-
+Section3:NewButton("Selling Script", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Kingy099/Kingys-Gui/main/KingySellingGui.lua'))()
 end)
 
 Section3:NewButton("ButtonText", "ButtonInfo", function()
-
     print("Clicked")
-
-end)
-
-Section3:NewButton("ButtonText", "ButtonInfo", function()
-
-    print("Clicked")
-
-end)
-
-Section3:NewButton("ButtonText", "ButtonInfo", function()
-
-    print("Clicked")
-
-end)
-
---Tab4
-
-Section4:NewButton("Safe spot", "ButtonInfo", function() 
-
-end)
-
-Section4:NewButton("Bank", "ButtonInfo", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-457.610229, 39.0342064, -287.75296, 0.0585283451, 4.92032974e-08, -0.99828577, 5.8701759e-09, 1, 4.96319537e-08, 0.99828577, -8.76498873e-09, 0.0585283451)
 end)
 
 Section4:NewButton("ButtonText", "ButtonInfo", function()
-
+    print("Clicked")
 end)
 
 Section4:NewButton("ButtonText", "ButtonInfo", function()
-print(“fortnite”)
+    print("Clicked")
 end)
 
+Section5:NewButton("Swagmode", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()   
+end)
 
-Section1:NewTextBox("Teleport to player", "TextboxInfo", function(txt)
-local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
-local p2 = (txt)
+Section5:NewButton("Faded", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
 
+Section6:NewButton("ButtonText", "ButtonInfo", function()
+    print("Clicked")
+end)
 
-p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
-
-wait(5)
+Section6:NewButton("ButtonText", "ButtonInfo", function()
+    print("Clicked")
 end)
