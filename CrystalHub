@@ -2,19 +2,7 @@
 _G.UILoadingSongID = ""
 _G.Themes = "Joyboy"
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/0nlyEx/Zoro/main/UI%20Library/ZoroLib.lua"))()
-local Window = Library.CreateLib("Crystal X", _G.Themes) 
-
-local Section1= Tab1:NewSection("Main")
-
-local Section2= Tab2:NewSection("Player")
-
-local Section3= Tab3:NewSection("Selling")
-
-local Section4= Tab4:NewSection("Teleports")
-
-local Section5= Tab5:NewSection("Fun")
-
-local Section6= Tab6:NewSection("Info")
+local Window = Library.CreateLib("Crystal X", _G.Themes)
 
 local Tab1= Window:NewTab("Main")
 
@@ -27,6 +15,18 @@ local Tab4= Window:NewTab("Teleports")
 local Tab5= Window:NewTab("Fun")
 
 local Tab6= Window:NewTab("Info")
+
+local Section1= Tab1:NewSection("Main")
+
+local Section2= Tab2:NewSection("Player")
+
+local Section3= Tab3:NewSection("Selling")
+
+local Section4= Tab4:NewSection("Teleports")
+
+local Section5= Tab5:NewSection("Fun")
+
+local Section6= Tab6:NewSection("Info")
 
 Section1:NewButton("ButtonText", "ButtonInfo", function()
     print("Clicked")
