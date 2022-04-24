@@ -95,3 +95,7 @@ end)
 Section4:NewButton("ButtonText", "ButtonInfo", function()
     print("Clicked")
 end)
+
+Section4:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.T, function()
+	Library:ToggleUI()
+end)
