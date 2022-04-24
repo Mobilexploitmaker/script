@@ -28,8 +28,8 @@ local Section5= Tab5:NewSection("Fun")
 
 local Section6= Tab6:NewSection("Info")
 
-Section1:NewButton("ButtonText", "ButtonInfo", function()
-    print("Clicked")
+Section1:NewButton("Keyboard FE(For mobile)", "ButtonInfo", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
 end)
 
 Section1:NewButton("ButtonText", "ButtonInfo", function()
