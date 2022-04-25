@@ -51,4 +51,6 @@ p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
 
 wait(5)
 end)
- 
+ Section1:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.V, function()
+	Library:ToggleUI()
+end)
