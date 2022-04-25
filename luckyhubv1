@@ -1,33 +1,53 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+—made by amongus man
+ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Lucky Block Script", "DarkTheme")
 
 local Tab1= Window:NewTab("Main")
 
-local Tab2= Window:NewTab("Blocks")
+local Tab2 = Window:NewTab("Player")
 
 local Tab3= Window:NewTab("Teleports")
 
-local Tab4= Window:NewTab("")
+local Tab4= Window:NewTab("Fun")
 
-local Section1= Tab1:NewSection("Section Name") 
+local Section1 = Tab1:NewSection("Kylchu")
 
-local Section2= Tab2:NewSection("Section Name")
+local Section2 = Tab2:NewSection("norachu")
 
-local Section3= Tab3:NewSection("Section Name")
+local Section3 = Tab3:NewSection("alichu")
 
-local Section4= Tab4:NewSection("Section Name")
+local Section4 = Tab4:NewSection(“fortnite tryhard")
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
-    print("Clicked")
+Section1:NewButton("Normal block", "ButtonInfo", function()
+game.ReplicatedStorage.SpawnLuckyBlock:FireServer(“1”)
 end)
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
-    print("Clicked")
+Section1:NewButton("Super block", "ButtonInfo", function()
+game.ReplicatedStorage.SpawnSuperBlock:FireServer(“1”)
 end)
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
-    print("Clicked")
+Section1:NewButton("Diamond block", "ButtonInfo", function()
+game.ReplicatedStorage.SpawnDiamondBlock:FireServer(“1”)
 end)
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
-    print("Clicked")
+Section1:NewButton("Rainbow Block", "ButtonInfo", function()
+game.ReplicatedStorage.SpawnRainbowBlock:FireServer(“1”)
+end)
+
+Section1:NewButton("Galaxy Block", "ButtonInfo", function()
+game.ReplicatedStorage.SpawnGalaxyBlock:FireServer(“1”)
+end)
+
+Section2:NewSlider("Walkspeed", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section3:NewTextBox("TP to player", "TextboxInfo", function(txt)
+       local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = "txt"
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+
+wait(5)
 end)
