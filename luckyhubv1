@@ -1,0 +1,33 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Tab1= Window:NewTab("Main")
+
+local Tab2= Window:NewTab("Blocks")
+
+local Tab3= Window:NewTab("Teleports")
+
+local Tab4= Window:NewTab("")
+
+local Section1= Tab1:NewSection("Section Name") 
+
+local Section2= Tab2:NewSection("Section Name")
+
+local Section3= Tab3:NewSection("Section Name")
+
+local Section4= Tab4:NewSection("Section Name")
+
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    print("Clicked")
+end)
+
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    print("Clicked")
+end)
+
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    print("Clicked")
+end)
+
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    print("Clicked")
+end)
