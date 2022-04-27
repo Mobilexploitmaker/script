@@ -1,0 +1,50 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+
+local colors = {
+    SchemeColor = Color3.fromRGB(44, 191, 16),
+    Background = Color3.fromRGB(33, 127, 15),
+    Header = Color3.fromRGB(26, 164, 14),
+    TextColor = Color3.fromRGB(255,255,255),
+    ElementColor = Color3.fromRGB(0, 0, 0)
+}
+
+local Window = Library.CreateLib("Turtle Selling UI", colors)
+
+local Tab1 = Window:NewTab("Selling tab")
+local Section1 = Tab1:NewSection("uwu")
+
+
+Section1:NewToggle("Auto Drop", "ToggleInfo", function(state)
+    if state then
+        
+_G.Cash = true; while 
+_G.Cash== true do 
+game.ReplicatedStorage.MainEvent:FireServer("DropMoney",10000)
+
+game:GetService("Players").LocalPlayer.DataFolder.Currency.Value = game:GetService("Players").LocalPlayer.DataFolder.Currency.Value - 10000
+wait(15) end
+    else
+_G.Cash = false; while 
+_G.Cash== true do 
+game.ReplicatedStorage.MainEvent:FireServer("DropMoney",10000)
+
+game:GetService("Players").LocalPlayer.DataFolder.Currency.Value = game:GetService("Players").LocalPlayer.DataFolder.Currency.Value - 10000
+wait(15) end
+        end
+end)
+Section1:NewButton("Swag Crash", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+end)
+
+Section1:NewButton("Safe Spot", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(207.48085, 38.25, 200014.953, 0.507315397, 0, -0.861760437, 0, 1, 0, 0.861760437, 0, 0.507315397)
+end)
+
+Section1:NewButton("Bank", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-437.125885, 38.9783134, -285.587372, 0.0165725499, 5.298579e-08, -0.99986279, 1.16139711e-08, 1, 5.31855591e-08, 0.99986279, -1.24937944e-08, 0.0165725499)
+end)
+
+Section1:NewKeybind("UI Toggle","KeybindInfo", Enum.KeyCode.C, function()
+	Library:ToggleUI()
+end)
