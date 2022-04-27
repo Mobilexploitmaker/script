@@ -23,14 +23,14 @@ _G.Cash== true do
 game.ReplicatedStorage.MainEvent:FireServer("DropMoney",10000)
 
 game:GetService("Players").LocalPlayer.DataFolder.Currency.Value = game:GetService("Players").LocalPlayer.DataFolder.Currency.Value - 10000
-wait(15.9) end
+wait(15.6) end
     else
 _G.Cash = false; while 
 _G.Cash== true do 
 game.ReplicatedStorage.MainEvent:FireServer("DropMoney",10000)
 
 game:GetService("Players").LocalPlayer.DataFolder.Currency.Value = game:GetService("Players").LocalPlayer.DataFolder.Currency.Value - 10000
-wait(15.9) end
+wait(15.6) end
         end
 end)
 Section1:NewButton("Swag Crash", "ButtonInfo", function()
@@ -49,5 +49,5 @@ Section1:NewKeybind("UI Toggle","KeybindInfo", Enum.KeyCode.C, function()
 	Library:ToggleUI()
 end)
 
-Section1:NewLabel("UPDATED SUCCESSFULLY")
+Section1:NewLabel("UPDATED SUCCESSFULLY x2")
 
