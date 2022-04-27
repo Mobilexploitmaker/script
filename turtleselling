@@ -49,5 +49,5 @@ Section1:NewKeybind("UI Toggle","KeybindInfo", Enum.KeyCode.C, function()
 	Library:ToggleUI()
 end)
 
-Section1:NewLabel("UPDATED SUCCESSFULLY x2")
+Section1:NewLabel("UPDATED uwu SUCCESSFULLY x2")
 
