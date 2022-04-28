@@ -55,6 +55,6 @@ end)
 
 Section1:NewLabel("extra ")
 
-Section1:NewKeybind("UI Toggle","KeybindInfo", Enum.KeyCode.C, function()
+Section1:NewKeybind("UI Toggle.","KeybindInfo", Enum.KeyCode.C, function()
 	Library:ToggleUI()
 
