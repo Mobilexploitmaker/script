@@ -5,7 +5,7 @@ local colors = {
     SchemeColor = Color3.fromRGB(117, 255, 26),
     Background = Color3.fromRGB(0, 0, 0),
     Header = Color3.fromRGB(0, 0, 0),
-    TextColor = Color3.fromRGB(255,255,255),
+    TextColor = Color3.fromRGB(90,90,90),
     ElementColor = Color3.fromRGB(0, 0, 0)
 }
 
