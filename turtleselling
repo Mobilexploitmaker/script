@@ -51,3 +51,7 @@ end)
 
 Section1:NewLabel("UPDATED uwu SUCCESSFULLY x2")
 
+Section1:NewButton("Admin Base", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(“-873.131531, -38.3992119, -582.999573, 0.995990932, 8.53862048e-09, -0.0894544795, 1.00775621e-09, 1, 1.06672545e-07, 0.0894544795, -1.06335037e-07, 0.995990932”)
+end)
+
