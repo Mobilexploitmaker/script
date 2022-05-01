@@ -9,7 +9,7 @@ local colors = {
     ElementColor = Color3.fromRGB(0, 0, 0)
 }
 
-local Window = Library.CreateLib("Turtle Selling UI", colors)
+local Window = Library.CreateLib("Turtle Selling GUI", colors)
 
 local Tab1 = Window:NewTab("Selling tab")
 local Section1 = Tab1:NewSection("uwu")
