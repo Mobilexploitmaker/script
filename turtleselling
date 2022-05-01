@@ -15,7 +15,7 @@ local Tab1 = Window:NewTab("Selling tab")
 local Section1 = Tab1:NewSection("uwu")
 
 
-Section1:NewToggle("Auto Drop", "ToggleInfo", function(state)
+Section1:NewToggle("Auto Drop uwu", "ToggleInfo", function(state)
     if state then
         
 _G.Cash = true; while 
@@ -23,14 +23,14 @@ _G.Cash== true do
 game.ReplicatedStorage.MainEvent:FireServer("DropMoney",10000)
 
 game:GetService("Players").LocalPlayer.DataFolder.Currency.Value = game:GetService("Players").LocalPlayer.DataFolder.Currency.Value - 10000
-wait(15.6) end
+wait(15.7) end
     else
 _G.Cash = false; while 
 _G.Cash== true do 
 game.ReplicatedStorage.MainEvent:FireServer("DropMoney",10000)
 
 game:GetService("Players").LocalPlayer.DataFolder.Currency.Value = game:GetService("Players").LocalPlayer.DataFolder.Currency.Value - 10000
-wait(15.6) end
+wait(15.7) end
         end
 end)
 Section1:NewButton("Swag Crash", "ButtonInfo", function()
